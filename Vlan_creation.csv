@@ -1,3 +1,3 @@
-﻿Store_code,First_vlan_ip,First_vlan_subnet,Second_Vlan_ip,Second_Vlan_subnet
-101,10.10.10.1,255.255.255.0,20.20.20.1,255.255.255.0
-102,172.16.0.1,255.255.255.0,172.17.0.1,255.255.255.0
+Store_code,FW_MGMT_IP,First_vlan_ip,First_vlan_subnet,Second_Vlan_ip,Second_Vlan_subnet
+101,1.1.1.1,10.10.10.1,255.255.255.0,20.20.20.1,255.255.255.0
+102,2.2.2.2,10.10.30.1,255.255.255.0,20.20.30.1,255.255.255.0
