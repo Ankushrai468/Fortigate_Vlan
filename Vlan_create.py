@@ -35,7 +35,7 @@ with open ("Vlan_Config.txt", "w", encoding="utf-8") as f:
 # connect to fortigate and push all commands on fortigate through netmiko
 Fortigate_Connect = {
     'device_type' : 'fortinet',
-    'host' : '10.10.10.10',
+    'host' : FMG_dict_var["FW_MGMT_IP"],
     'username' : 'admin',
     'password' : 'admin',
     'port' : 22,
@@ -43,5 +43,4 @@ Fortigate_Connect = {
 ssh = ConnectHandler(**Fortigate_Connect)
 send_command = ssh.send_config_from_file("Vlan_Config.txt")
 print(send_command)
-
 
