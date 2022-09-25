@@ -33,11 +33,13 @@ print(output)
 with open ("Vlan_Config.txt", "w", encoding="utf-8") as f:
     f.write(output)
 # connect to fortigate and push all commands on fortigate through netmiko
+username = input()
+password = input()
 Fortigate_Connect = {
     'device_type' : 'fortinet',
     'host' : FMG_dict_var["FW_MGMT_IP"],
-    'username' : 'admin',
-    'password' : 'admin',
+    'username' : username,
+    'password' : password,
     'port' : 22,
 }
 ssh = ConnectHandler(**Fortigate_Connect)
