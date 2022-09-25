@@ -1,0 +1,24 @@
+config vdom
+edit testing
+config system interface
+    edit "port2.72"
+        set vdom "testing"
+        set ip 10.10.10.1 255.255.255.0
+        set allowaccess ping
+        set alias "Vlan_01"
+        set role lan
+        set interface "port2"
+        set vlanid 72
+    next
+config system interface
+    edit "port2.70"
+        set vdom "testing"
+        set ip 20.20.20.1 255.255.255.0
+        set allowaccess ping
+        set alias "Vlan_02"
+        set role lan
+        set interface "port2"
+        set vlanid 70
+    next
+end
+end

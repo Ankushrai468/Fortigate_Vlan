@@ -1,0 +1,2 @@
+﻿Store_code,First_vlan_ip,First_vlan_subnet,Second_Vlan_ip,Second_Vlan_subnet
+101,10.10.10.1,255.255.255.0,20.20.20.1,255.255.255.0
